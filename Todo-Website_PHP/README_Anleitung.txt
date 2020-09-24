@@ -15,4 +15,6 @@ Um die Website mit der Datenbank benutzen zu können benötigen Sie XAMPP.
 
 6. Verschieben Sie den Projektordner nun in das Verzeichnis "C:/XAMPP/htdocs/".
 
-6. Jetzt müssen Sie im URL "localhost" + den Pfad angeben und die Website benutzen.
+7. Jetzt müssen Sie im URL "localhost" + den Pfad angeben und die Website benutzen.
+
+8. Damit Sie sich als Admin in der Website anmelden können, müssen Sie den Benutzernamen "EminBoz" und Passwort "Emin123." eingeben.
