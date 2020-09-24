@@ -170,7 +170,7 @@ public class Draw extends JLabel {
            
    
    
-       g.drawString("Gewinner: " + "Spieler", 550, 400);
+       g.drawString("SPIELER GEWINNT!", 535, 400);
        
       
        
@@ -189,12 +189,27 @@ public class Draw extends JLabel {
       Hauptsystem.kopf_gegner.setX(4);
       Hauptsystem.kopf_gegner.setX(5);
       
-       g.drawString("Gewinner: " + "CPU", 550, 400);
-      
-   
-
+       g.drawString("CPU GEWINNT!", 550, 400);
+       
 }
     
+   
+   
+   if(snake.Clock.cooldown_set == true) {
+   
+       g.drawString("READY?", 660, 400);
+       
+   
+   }
+   
+    if(snake.Clock.cooldown_go == true) {
+   
+       g.drawString("GO!", 720, 400);
+       
+   
+   }
+    
+   
 
    
    

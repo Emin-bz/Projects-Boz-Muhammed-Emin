@@ -7,6 +7,7 @@ package snake.Gegner;
 
 import snake.Hauptsystem;
 import snake.Statistik;
+import static snake.Clock.cooldown_set;
 
 /**
  *
@@ -15,9 +16,23 @@ import snake.Statistik;
 public class ClockGegner extends Thread {
     
     int h = 1;
+    public static boolean cooldown_set = false;
+    public static boolean cooldown_go = false;
+    
     
         public void run () {
     
+       cooldown_set = true;
+        try {
+        Thread.sleep(3000);
+      } catch(InterruptedException e) {}
+        
+           cooldown_go = true;
+        try {
+        Thread.sleep(500);
+        cooldown_go = false;
+      } catch(InterruptedException e) {}
+            
     do {
      try { Thread.sleep(150);}catch(InterruptedException e) {
          
