@@ -18,3 +18,5 @@ Um die Website mit der Datenbank benutzen zu können benötigen Sie XAMPP.
 7. Jetzt müssen Sie im URL "localhost" + den Pfad angeben und die Website benutzen.
 
 8. Damit Sie sich als Admin in der Website anmelden können, müssen Sie den Benutzernamen "EminBoz" und Passwort "Emin123." eingeben.
+
+9. Wenn Sie sich nicht als Admin anmelden möchten, können Sie unter "Registrieren" einen neuen Benutzer erstellen.
