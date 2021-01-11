@@ -36,7 +36,7 @@ public void run () {
 
     jf = new JFrame();
 
-    jf.setTitle("Snake 1vs1: Menü");
+    jf.setTitle("Snake Race: Menü");
     jf.setSize(400, 400);
     jf.setDefaultCloseOperation(EXIT_ON_CLOSE);
     jf.setResizable(false);

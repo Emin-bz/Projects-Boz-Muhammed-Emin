@@ -14,7 +14,7 @@ public class Gui extends JFrame {
     
     d = new Draw();
         
-    this.setTitle("Snake 1vs1: Im Spiel");
+    this.setTitle("Snake Race: Im Spiel");
     this.setSize(1600, 900);
     this.setDefaultCloseOperation(EXIT_ON_CLOSE);
     this.setResizable(false);

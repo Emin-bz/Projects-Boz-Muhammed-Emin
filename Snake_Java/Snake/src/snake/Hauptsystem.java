@@ -21,6 +21,8 @@ import snake.Gegner.Reihe_Gegner;
 public class Hauptsystem {
     
     // Objekte der Klassen des Spielers
+    
+    public Kopf kopf1;
     public static Kopf kopf = new Kopf(4,5);
     public static  ArrayList <Reihe> reihe = new ArrayList<Reihe>();
     public static Essen essen = new Essen();
@@ -38,6 +40,12 @@ public class Hauptsystem {
      des jeweiligen Characters richtig und in der gewünschten Pixeleinheit festgelegt
      */
     
+     
+     public Hauptsystem () {
+     
+         this.kopf1 = new Kopf(4,5);
+     
+     }
     
     public static Point Koordinaten(int x, int y)  {
     

@@ -38,7 +38,7 @@ public class Spielanleitung {
     
   
       
-    jf.setTitle("Snake 1vs1: Spielanleitung");
+    jf.setTitle("Snake Race: Spielanleitung");
     jf.setSize(606, 740);
     jf.setDefaultCloseOperation(EXIT_ON_CLOSE);
     jf.setResizable(false);
