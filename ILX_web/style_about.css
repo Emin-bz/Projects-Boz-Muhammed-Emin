@@ -1,0 +1,114 @@
+.navbar-change {
+
+    padding-top: 55px;
+    font-size: 30px;
+
+
+  }
+
+.header {
+
+
+    font-size: 100px;
+    color: white;
+    text-align: center;
+    
+    
+    padding-top: 50px;
+    
+    }
+
+
+    .beschreibung {
+
+        width: 100%;
+        
+        }
+        
+        .beschreibung h2 {
+        
+          padding-top: 100px;
+          margin-bottom: 100px;
+          width: 100%;
+          
+          bottom: 70px;
+          color: #f1f1f1;
+          text-align: center;
+          font-style: normal;
+          font-weight: normal;
+          position: relative;
+          word-wrap: break-word;
+          display: block;
+            
+          font-family: monospace;
+          
+        }
+
+        .beschreibung h1 {
+        
+         
+          margin-bottom: 100px;
+          width: 100%;
+          
+          bottom: 70px;
+          color: #f1f1f1;
+          text-align: center;
+          font-style: normal;
+          font-weight: bold;
+          position: relative;
+          word-wrap: break-word;
+          display: block;
+            
+          font-family: monospace;
+          
+        }
+
+    body {
+
+        height: 1200px;
+
+        }
+
+        .header {
+
+
+   
+          /*background-image: url("Images/night.jpeg");*/
+          background-position: relative;
+          
+      
+          background-position:left;
+          background-color: #1f1f1f;
+          background-size: cover;
+          background-size: 2320px 1080px;
+      
+          padding: 200px 10px; /* Some padding */
+         
+          color: white;
+          text-align: center; /* Centered text */
+          font-size: 90px; /* Big font size */
+          font-weight: bold;
+          position: relative; /* Fixed position - sit on top of the page */
+          top: 0;
+          width: 100%; /* Full width */
+          transition: 0.2s; /* Add a transition effect (when scrolling - and font size is decreased) */
+          font-family: monospace;
+          font-style: normal;
+         
+          
+      
+        }
+
+        .responsive_footer {
+
+          position: fixed;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          background-color: #1f1f1f;
+          color: white;
+          text-align: center;
+          padding-top: 10px;
+        
+        
+        }

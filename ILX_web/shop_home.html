@@ -1,0 +1,269 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+      <title>ILX Shop</title>
+
+      <!-- Bootstrap -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+      
+      <link rel="stylesheet" href="style.css">
+
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+  <style>
+
+
+
+
+  </style>
+    <body style="background-color:#1f1f1f">
+    
+
+        <form action="" method="POST">
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="brand">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          
+        <img alt="img" style="top:-20px;left:-20px; position:relative;left:-10px;top:-10px;" src="Images/logo_ilx_transparent.png" id="brand" width="170px">
+        </div>
+        </div>
+    
+    <div class="navbar-change">
+         <!-- Collect the nav links, forms, and other content for toggling -->
+         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+            <li class="active"><a href="shop_home.html">Our offers</a></li>
+            <li><a href="about_us.html">About us</a></li>
+          </ul>
+          </div>
+    </nav>
+
+    <div class="header_shop" id="header_shop">
+    Tell your story.
+    </div>
+
+
+
+
+
+<div class="responsive_offer">
+    <div class="btn btn-dark" role="group" aria-label="...">
+  <div class="shop_button"><button type="button" style="width:200px;height:60px;" class="btn btn-warning" id="shop_b_shop"
+  onclick="smoothScroll_shop(document.getElementById('content'))">What we offer</button>
+  </div>
+  </div>
+</div>
+
+<div class="responsive_offer">
+  <div class="btn btn-dark" role="group" aria-label="...">
+<div class="temp_button"><button type="button" style="width:200px;height:60px;margin-top:-170px;" class="btn btn-success" id="shop_b_shop"
+onclick="redirect_templates(document.getElementById('content'))">Templates</button>
+</div>
+</div>
+</div>
+
+<script>
+  window.redirect_templates = function(target) {
+  
+    window.location.href = "templates.html";
+  }
+  </script>
+
+
+  <script>
+  window.smoothScroll_shop = function(target) {
+
+    $('html,body').animate({
+          scrollTop: $(".shop_content").offset().top},
+          'slow');
+  }
+  </script>
+
+  <script>
+
+  var container = document.querySelector("#header_shop");
+  var mover = document.querySelector("#header_shop");
+
+  container.addEventListener("mousemove", function(e) {
+    mover.style.backgroundPositionX = -e.offsetX * 0.1 + "px";
+    mover.style.backgroundPositionY = -e.offsetY + 1 + "px";
+  });
+
+  container.addEventListener("mouseenter", function() {
+    
+    setTimeout(function() {
+      mover.classList.add("no-more-slidey");
+      container.removeEventListener("mouseenter");
+    }, 250);
+    
+  });
+
+  // When the user scrolls down 50px from the top of the document, resize the header's font size
+  window.onscroll = function() {scrollFunction()};
+  </script>
+  <script>
+  function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      document.getElementById("shop_content").style.fontSize = "30px";
+    } else {
+      document.getElementById("shop_content").style.fontSize = "90px";
+    }
+  }
+
+  </script>
+
+<div class="shop_beginning">
+<div class="desc">
+<h2 style="color:white;">
+  We offer any kind of digital art such as banner, profile pictures, wallpapers, thumbnails, a cover for your music title, or a customized design based on your personal wishes.
+
+ <br>
+</br>
+<b>Tell your story.</b> 
+</h2>
+</div>
+</div>
+
+
+<div class="responsive_offers">
+<div class="shop_content">
+<div class="columns">
+  <ul class="price">
+    <li class="header1" style="color:#f1f1f1">Banner</li>
+    <li class="grey">$ 25</li>
+    <li class="descr" style="color:#f1f1f1">The banner is a really important element of your Social Media profiles. So, you can’t just take some picture from the internet. It has to be original and professional. Therefore, we put passion and effort in our work to fulfill your wishes. To provide the best outcome we offer Discord calls and chats for free.    
+      <div class="redirect_button">
+      <button type="button" id="disc_button" class="join_disc" style="font-size:15px;left:795px;top:-35px;background-color:#8d8bcc;border-color:#8d8bcc;width:50%;height:60px;margin-top: 30px;;" class="btn btn-success" onclick="purchase(document.getElementById('content'))">Order on Discord  </button>
+      </div>
+    </li>
+      
+    
+  </ul>
+</div>
+
+
+
+<div class="columns">
+  <ul class="price">
+    <li class="header1" style="color:#f1f1f1">Logos/Profile picture</li>
+    <li class="grey">$ 5</li>
+    <li class="descr" style="color:#f1f1f1">You show yourself through profile pictures and logos to the Social Media world. Especially Logos have to be original to show that you are professional. Therefore, we put passion and effort in our works to fulfill your wishes. To provide the best outcome we offer Discord calls and chats for free.    <div class="redirect_button">
+      <button type="button" id="disc_button" class="join_disc" style="font-size:15px;left:795px;top:-35px;background-color:#8d8bcc;border-color:#8d8bcc;width:50%;height:60px;margin-top: 30px;;" class="btn btn-success" onclick="purchase(document.getElementById('content'))">Order on Discord  </button>
+      </div>
+    </li>
+   
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header1" style="color:#f1f1f1">Wallpaper</li>
+    <li class="grey">$ 15</li>
+    <li class="descr" style="color:#f1f1f1">Wallpapers are something special. They are full of elements which show your personality. Its more than just a simple background picture. Therefore, we put passion and effort in our works to fulfill your wishes. To provide the best outcome we offer Discord calls and chats for free.    <div class="redirect_button">
+      <button type="button" id="disc_button" class="join_disc" style="font-size:15px;left:795px;top:-35px;background-color:#8d8bcc;border-color:#8d8bcc;width:50%;height:60px;margin-top: 30px;;" class="btn btn-success" onclick="purchase(document.getElementById('content'))">Order on Discord  </button>
+      </div>
+    </li>
+    
+  </ul>
+</div>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header1" style="color:#f1f1f1">Thumbnail</li>
+    <li class="grey">$ 12</li>
+    <li class="descr" style="color:#f1f1f1">When we look for videos, we always are influenced by the thumbnail. If the thumbnail is good and catchy, we click at the video. This makes Thumbnails extremely important for YouTube channels. Therefore, we put passion and effort in our works to fulfill your wishes. To provide the best outcome we offer Discord calls and chats for free.
+    <div class="redirect_button">
+      <button type="button" id="disc_button" class="join_disc" style="font-size:15px;left:795px;top:-35px;background-color:#8d8bcc;border-color:#8d8bcc;width:50%;height:60px;margin-top: 30px;;" class="btn btn-success" onclick="purchase(document.getElementById('content'))">Order on Discord  </button>
+      </div>
+    </li>
+  
+  </ul>
+</div>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header1" style="color:#f1f1f1">Cover</li>
+    <li class="grey">$ 10</li>
+    <li class="descr" style="color:#f1f1f1">When you publish Music on music stream apps you need a cover. This should not be a simple picture of yourself. You need a good edited cover to show that you are professional. Therefore, we put passion and effort in our works to fulfill your wishes. To provide the best outcome we offer Discord calls and chats for free.    <div class="redirect_button">
+      <div class="redirect_button">
+        <button type="button" id="disc_button" class="join_disc" style="font-size:15px;left:795px;top:-35px;background-color:#8d8bcc;border-color:#8d8bcc;width:50%;height:60px;margin-top: 30px;;" class="btn btn-success" onclick="purchase(document.getElementById('content'))">Order on Discord  </button>
+        </div>
+      </li>
+    
+  </ul>
+</div>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header1" style="color:#f1f1f1">Custom Design</li>
+    <li class="grey">$ 20 - 80</li>
+    <li class="descr" style="color:#f1f1f1">You have different wishes than listed here. You want something even more individual. Then we offer you custom designs. Tell our designers which wishes you have with discord calls and chats, which are free. Our designers take that information to create your Design and won’t stop until you are completely satisfied with our work.
+  
+    <div class="redirect_button">
+      <button type="button" id="disc_button" class="join_disc" style="font-size:15px;left:795px;top:-35px;background-color:#8d8bcc;border-color:#8d8bcc;width:50%;height:60px;margin-top: 30px;;" class="btn btn-success" onclick="purchase(document.getElementById('content'))">Order on Discord  </button>
+      </div>
+    </li>
+  </ul>
+</div>
+</div>
+</div>
+       
+  <script>
+
+
+    window.purchase = function(target) {
+
+    window.location.href = "https://disboard.org/de/server/698846340339335179";
+  }
+  </script>
+
+
+
+
+
+  </div>
+
+  <div class="responsive_footer">
+  <div class="footer_shop">
+    <footer>
+      <p>Please read our Terms and Conditions: </p>
+      <p><a href="PDFs/terms_and_conditions.pdf">Terms and Conditions</a>
+      </footer>
+    </div>
+  </div>
+
+    </form>
+    </body>
+
+  </html>
+
+
